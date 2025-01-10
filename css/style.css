@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 *{margin:0;box-sizing:border-box;}
 a{text-decoration:none}
 label{display:block;}
 img{vertical-align:bottom;}
 ul{list-style:none;padding:0;}
 button{cursor:pointer;padding:0;}
-
 
 html{
     font-size:15px; 
@@ -15,10 +15,11 @@ html{
     --y:#fce38a;
     --red:#f38181;
     --green:#95e1d3;
-    --grad:linear-gradient(#f38181,#fce38a);
+    --grad:linear-gradient(#f38181e6,#fce38ae6);
  }
 body{font:16px/1.2 var(--ff);}
 .kus{ font-family: var(--kus);}
+
 
 .container{max-width:1230px;margin:auto;padding:0 1rem;}
 .row{display:grid;grid-template-columns:repeat(12,1fr);gap:2rem;}
@@ -101,6 +102,41 @@ section h2{ font-size: 30px; text-transform: uppercase; margin-top: 20px; }
 .iphone{ position: absolute; bottom: -55px; transform: translateX(-86px);}
 
 
+
+.wrap-6{ padding: 90px 0 0 0; text-align: center;}
+
+
+.wrap-7{ padding: 70px 0; background: #f8f8f8; text-align: center;}
+
+
+.wrap-8{ padding: 90px 0 0 0; text-align: center;}
+.team{ margin-top: 6rem;}
+.team-pic{ position: relative; margin-bottom: 20px;}
+.over{ position: absolute; inset: 0; background: var(--grad); opacity: 0; transition: .3s;}
+.caption{ display: grid; height: 100%; place-items: center;}
+.team-pic:hover .over{ opacity: 1; transform: translate(-10px, -10px); box-shadow: 10px 10px 0 var(--green); }
+.caption li:not(:first-child){ border-left: 1px solid var(--red); }
+.caption a{ display: block; width: 56px; line-height: 56px; background: var(--y); color: var(--red); font-size: 24px; }
+.caption a:hover{ background: var(--red); color: var(--y);}
+
+
+.wrap-9{ padding: 70px 0; background: #f8f8f8; text-align: center;}
+
+
+.wrap-10{ padding: 70px 0; background: #fff; text-align: center;}
+.cs{ height: 100%;}
+.work{ position: relative;}
+.row.g0{ gap: 0;}
+.over{ position: absolute; inset: 0; background: var(--grad); opacity: 0; transition: .3s;}
+.caption{ display: grid; height: 100%; place-items: center;}
+.work:hover .over{ opacity: 1;}
+
+
+
+
+
+
+
 /* responsive */
 @media screen and (max-width:1250px){
     html{font-size:14px;}
@@ -140,7 +176,7 @@ section h2{ font-size: 30px; text-transform: uppercase; margin-top: 20px; }
         .col-m-11{grid-column:span 11}
         .col-m-12{grid-column:span 12}
         .iphone{ right: 0; transform: translateX(0); }
-    
+        .caption a{  width: 36px; line-height: 36px;}
 }
     
     
